@@ -6,7 +6,7 @@ $sql="Select * from huyen
 	where matinh='{$matinh}' 
 	order by mahuyen";
 $rs=mysqli_query($con,$sql);
-$str="<select id=huyen>";
+$str="<select id=huyen>"; //code ghe lam
 while($row=mysqli_fetch_array($rs)){
 	$str.="<option value={$row['mahuyen']}>{$row['tenhuyen']}</option>";
 }
